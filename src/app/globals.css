@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+  --color-uic-navy: #001E62;
+  --color-uic-red: #D50032;
+  --color-uic-light-blue: #0073CF;
+  --color-uic-gray: #6D6E71;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
