@@ -7,7 +7,7 @@ export default function Header() {
             <h1 className="text-2xl md:text-3xl font-bold">
               UIC College of Business Administration
             </h1>
-            <p className="text-uic-red text-xl md:text-2xl font-semibold mt-1">
+            <p className="text-uic-red text-2xl md:text-3xl font-semibold mt-1">
               AI Council
             </p>
           </div>
