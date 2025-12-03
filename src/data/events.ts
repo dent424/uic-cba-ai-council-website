@@ -14,7 +14,6 @@ export const brownbagEvents: BrownbagEvent[] = [
     speakerInfo: "UIC Marketing",
     topic: "Current and near future capabilities of Generative AI with applications to business courses",
     status: "past",
-    videoUrl: "https://uic.zoom.us/rec/share/Nx3XvY6drjGwvz_3XHSbfBUsl8r0wt53Ge4oRimzzR0GuwkUJF-zud8hW5LVL48.GhDEYrK1lei8i1in",
   },
   {
     date: "2025-07-16",
@@ -121,7 +120,9 @@ export function getPastEvents(): BrownbagEvent[] {
 
 export function formatDate(dateString: string): string {
   if (dateString === "TBD") return "TBD";
-  const date = new Date(dateString);
+  // Parse as local date to avoid timezone shift issues
+  const [year, month, day] = dateString.split("-").map(Number);
+  const date = new Date(year, month - 1, day);
   return date.toLocaleDateString("en-US", {
     weekday: "long",
     year: "numeric",
