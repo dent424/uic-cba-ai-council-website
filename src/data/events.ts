@@ -91,7 +91,14 @@ export const brownbagEvents: BrownbagEvent[] = [
     date: "2026-01-21",
     speaker: "Barb Barney-McNamara",
     speakerInfo: "UIC Marketing",
-    topic: "TBD",
+    topic: "Upcoming",
+    status: "upcoming",
+  },
+  {
+    date: "2026-03-03",
+    speaker: "TEST",
+    speakerInfo: "HARVARD",
+    topic: "TESTING STUFF",
     status: "upcoming",
   },
 ];
