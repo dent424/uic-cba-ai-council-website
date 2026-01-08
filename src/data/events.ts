@@ -94,13 +94,6 @@ export const brownbagEvents: BrownbagEvent[] = [
     topic: "Upcoming",
     status: "upcoming",
   },
-  {
-    date: "2026-03-03",
-    speaker: "TEST",
-    speakerInfo: "HARVARD",
-    topic: "TESTING STUFF",
-    status: "upcoming",
-  },
 ];
 
 export function getUpcomingEvents(): BrownbagEvent[] {
