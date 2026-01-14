@@ -26,28 +26,11 @@ export default function About() {
             <h3 className="text-xl font-semibold text-uic-navy mb-3">
               Brownbag Sessions
             </h3>
-            <p className="text-gray-700 mb-4">
+            <p className="text-gray-700">
               Our brownbag series features presentations from UIC faculty and
               external experts on topics ranging from using generative AI in
               coursework to creating custom AI tools for classroom use.
             </p>
-            <div className="bg-white rounded-lg p-4 border border-gray-200">
-              <h4 className="font-semibold text-uic-navy mb-2">Session Details</h4>
-              <ul className="text-gray-700 space-y-2">
-                <li className="flex items-center gap-2">
-                  <span className="text-uic-light-blue">&#8226;</span>
-                  Weekly sessions on Wednesdays
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="text-uic-light-blue">&#8226;</span>
-                  Open to all CBA faculty and staff
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="text-uic-light-blue">&#8226;</span>
-                  Recordings available for select sessions
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
       </div>
