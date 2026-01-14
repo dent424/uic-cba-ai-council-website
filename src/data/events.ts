@@ -91,7 +91,7 @@ export const brownbagEvents: BrownbagEvent[] = [
     date: "2026-01-21",
     speaker: "Barb Barney-McNamara",
     speakerInfo: "UIC Marketing",
-    topic: "Upcoming",
+    topic: "Enhancing assignments with AI-generated, realistic case data",
     status: "upcoming",
   },
 ];
@@ -111,11 +111,13 @@ export function getPastEvents(): BrownbagEvent[] {
   const today = new Date();
   today.setHours(0, 0, 0, 0);
 
-  return brownbagEvents.filter(event => {
-    if (event.date === "TBD") return false;
-    const eventDate = new Date(event.date);
-    return eventDate < today || event.status === "past";
-  });
+  return brownbagEvents
+    .filter(event => {
+      if (event.date === "TBD") return false;
+      const eventDate = new Date(event.date);
+      return eventDate < today || event.status === "past";
+    })
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 }
 
 export function formatDate(dateString: string): string {

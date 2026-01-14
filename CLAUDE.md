@@ -15,10 +15,10 @@ UIC College of Business Administration AI Council website deployed to Vercel via
 ## Reference Data
 
 The `Reference Data/` folder contains source data (not deployed):
-- `AI Council brown bag booking schedule.xlsx` - Brownbag event schedule with columns:
-  - Month, Date, Presenter, Presenter detail, Topic
+- `schedule.csv` - **Primary source** for updating events. Read this file to get the latest brownbag schedule.
+- `AI Council brown bag booking schedule.xlsx` - Original Excel file (CSV is exported from this)
 
-This data should be used to populate the events on the website.
+**When updating the schedule**: Always read `Reference Data/schedule.csv` and sync its contents with `src/data/events.ts`. The CSV contains columns: Month, Date, Presenter, Presenter detail, Topic.
 
 ## Deployment Workflow
 
