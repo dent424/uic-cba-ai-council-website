@@ -41,7 +41,7 @@ export const brownbagEvents: BrownbagEvent[] = [
   },
   {
     date: "2025-08-06",
-    speaker: "Özgür Arslan Ayaydin and Sayna Razi",
+    speaker: "Özgür Arslan Ayaydin and Sajna Razi",
     speakerInfo: "UIC Finance & Marketing",
     topic: "CBA AI statement and guidance on CBA syllabus policies",
     status: "past",
@@ -92,7 +92,8 @@ export const brownbagEvents: BrownbagEvent[] = [
     speaker: "Barb Barney-McNamara",
     speakerInfo: "UIC Marketing",
     topic: "Enhancing assignments with AI-generated, realistic case data",
-    status: "upcoming",
+    status: "past",
+    videoUrl: "https://uic.zoom.us/rec/share/NbuN1ym_76JSZoT3Mn_-d11WE9_b7msEc46kzFKr2olvU0ooGE1dq5OL2lZWBPp4.qE_YxH0yIoM7NwrI?startTime=1769020383000",
   },
 ];
 
