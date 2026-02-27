@@ -1,10 +1,12 @@
 export interface BrownbagEvent {
   date: string;
+  time?: string;
   speaker: string;
   speakerInfo: string;
   topic: string;
   status: "upcoming" | "past";
   videoUrl?: string;
+  zoomUrl?: string;
 }
 
 export const brownbagEvents: BrownbagEvent[] = [
@@ -94,6 +96,14 @@ export const brownbagEvents: BrownbagEvent[] = [
     topic: "Enhancing assignments with AI-generated, realistic case data",
     status: "past",
     videoUrl: "https://uic.zoom.us/rec/share/NbuN1ym_76JSZoT3Mn_-d11WE9_b7msEc46kzFKr2olvU0ooGE1dq5OL2lZWBPp4.qE_YxH0yIoM7NwrI?startTime=1769020383000",
+  },
+  {
+    date: "2026-03-04",
+    time: "12:00 to 1:00pm",
+    speaker: "Alvin Chin",
+    speakerInfo: "UIC IDS",
+    topic: "A Conceptual Framework for Responsible AI in the Workplace",
+    status: "upcoming",
   },
 ];
 
